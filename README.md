@@ -42,7 +42,7 @@ The project utilizes a structured pipeline starting from dataset ingestion, imag
 
 Below is the structured methodology representing the workflow from data preprocessing to Flask web app deployment.
 
-![Methodology Diagram](Methdology%20Diagram.png)
+![Methodology Diagram](./methodology_diagram.png)
 
 ---
 
@@ -59,7 +59,7 @@ To understand the dataset structure, we analyze the distribution of classes and 
 
 | Class Distribution Chart | Sample MRI Images Preview |
 | :---: | :---: |
-| ![Dataset Classes Pi Chart](Dataset%20Classes%20Pi%20chart.png) | ![Dataset View](dataset%20view.png) |
+| ![Dataset Classes Pi Chart](./dataset_classes_pie_chart.png) | ![Dataset View](./dataset_view.png) |
 
 > [!NOTE]
 > Class imbalance is a significant challenge in medical datasets (specifically with a low number of samples in `Moderate_Demented`). The pipeline handles this through oversampling minority classes to a configurable threshold and adjusting model class weights during loss computation.
@@ -89,7 +89,7 @@ During evaluation, test dataset metrics are calculated including Accuracy, Preci
 
 | Confusion Matrix | Actual vs Predicted Plots | Model Accuracy / Loss Performance |
 | :---: | :---: | :---: |
-| ![CNN Custom Confusion Matrix](CNN%20Custome%20Confusion%20matrix%20.png) | ![CNN Actual vs Predicted](CNN%20model%20results%20sample%20Actual%20vs%20predicted%20plot%20.png) | ![Model Performance](Model%20Performce%20and%20Segmentation%20of%20alzamier%20.png) |
+| ![CNN Custom Confusion Matrix](./cnn_custom_confusion_matrix.png) | ![CNN Actual vs Predicted](./cnn_actual_vs_predicted.png) | ![Model Performance](./model_performance_segmentation.png) |
 
 ---
 
@@ -101,25 +101,25 @@ A Flask-based web application provides an interactive portal for uploading MRI f
 
 #### 1. Landing & Welcome Page
 The landing page introduces the system, its capabilities, and allows navigation to the prediction portal.
-![App Landing Page](APP%20landing%20page%20.jpg)
+![App Landing Page](./app_landing_page.jpg)
 
 ---
 
 #### 2. Scan Upload & Prediction Interface
 Users can upload an MRI scan with a live preview before submitting for classification.
-![Web App Input Page](Web%20App%20Input%20page.jpg)
+![Web App Input Page](./web_app_input_page.jpg)
 
 ---
 
 #### 3. Real-Time Diagnostics & Probabilities
 Detailed diagnosis reports show the predicted category, prediction confidence, and comparative probabilities for all four states.
-![Final Prediction Page](Final%20Prediction%20page%20with%20view%20.jpg)
+![Final Prediction Page](./final_prediction_page.jpg)
 
 ---
 
 #### 4. Prediction Session History
 An ongoing history panel allows clinicians to compare different MRI uploads within the current session.
-![Prediction History](Prediction%20history%20.jpg)
+![Prediction History](./prediction_history.jpg)
 
 ---
 
